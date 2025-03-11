@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólió</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Kovács Péter</h1>
+        <h1>13.B</h1>
+        <p>Az eddigi tanulmányaim során rengeteget fejlődtem, és büszke vagyok arra, hogy sikerült elérnem a kitűzött céljaimat.
+            A tanulás során nemcsak új ismeretekre tettem szert, hanem sokkal magabiztosabb lettem a tudásommal kapcsolatban. 
+            A fejlődésem folyamatos, és motiváltnak érzem magam, hogy a jövőben még többet érjek el.</p>
+    </header>
+
+    <main>
+        <section id="11">
+            <h2>11. évfolyam</h2>
+            <p>Itt találhatóak a 11. évfolyamos projektek.</p>
+            <a href="11.html" class="go-to-link">Tovább a 11. évfolyamhoz</a>
+            <button onclick="goBack()">Vissza</button>
+        </section>
+
+        <section id="12">
+            <h2>12. évfolyam</h2>
+            <p>Itt találhatóak a 12. évfolyamos projektek.</p>
+            <a href="12.html" class="go-to-link">Tovább a 12. évfolyamhoz</a>
+            <button onclick="goBack()">Vissza</button>
+        </section>
+
+        <section id="13">
+            <h2>13. évfolyam</h2>
+            <p>Itt találhatóak a 13. évfolyamos projektek.</p>
+            <a href="13.html" class="go-to-link">Tovább a 13. évfolyamhoz</a>
+            <button onclick="goBack()">Vissza</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Portfólió &copy; 2025</p>
+    </footer>
+
+    <script>
+        // Navigáció az évfolyamok között
+        function scrollToSection(year) {
+            document.getElementById(year).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Visszalépés funkció
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
